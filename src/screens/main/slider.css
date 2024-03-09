@@ -1,0 +1,57 @@
+.slick-prev:before {
+   content: url('../../images/prev.svg')
+}
+
+.slick-next:before {
+    content: url('../../images/next.svg');  
+}
+
+.slick-prev, .slick-next {
+    margin-top: -10px;
+    position: relative;
+}
+
+.slick-slider {
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.slick-prev {
+    left: 0;
+    margin-right: 15px;
+}
+
+.slick-next {
+    margin-left: -33px;
+}
+
+.slick-slide {
+    position: relative;
+}
+
+.slick-list {
+    height: 250px !important;
+}
+
+.sliderContainer {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+@media screen and (max-width: 1320px) {
+    .slick-slider {
+        width: 330px !important;
+    }
+    .slick-prev {
+        left: 0;
+        margin-right: 0px;
+    }
+    
+    .slick-next {
+        right: 0;
+        margin-left: -18px;
+    }
+    
+}

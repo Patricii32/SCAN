@@ -1,0 +1,168 @@
+.tarif {
+    position: relative;
+    width: 415px;
+    border-radius: 10px;
+    margin-bottom: 118px;
+    box-shadow: 0px 0px 20px 0px #00000033;
+}
+
+.headerDiv {
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 7px 7px 0 0;
+    padding: 30px;
+    height: 123px;
+}
+
+.headerDivText {
+    width: 313px;
+}
+
+.headerP {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.currentTarif {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+
+    background-color: #3BA5E0;
+    width: 134px;
+    height: 24px;
+    border-radius: 10px;
+
+    color: #FFFFFF;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.price {
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.priceDiscount {
+    
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    margin-right: 19px;
+
+}
+
+.priceNoDiscount {
+    opacity: 50%;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.01em;
+    text-decoration: line-through;
+}
+
+.descriptionTextTarif {
+    position: relative;
+    padding: 30px 30px;
+}
+
+.descriptionPrice {
+    position: absolute;
+    margin-top: 10px;
+}
+
+.descriptionTextTarif h3 {
+    margin: 0;
+    margin-top: 91px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.list {
+    margin-top: 10px;
+    padding-left: 20px;
+    padding: 0;
+}
+
+.includedInTariff {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.includedInTariff:before {
+    content: url('../../images/check.svg');
+    margin-right: 8px;
+}
+
+.buttonTarif {
+    margin-top: 55px;
+    width: 100%;
+    height: 59px;
+    border: none;
+    background-color: #5970FF;
+    border-radius: 5px;
+
+    color: white;
+
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+}
+
+.buttonCurrent {
+    background-color: #D2D2D2;
+    color: black;
+}
+
+.containerTarifs {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1320px) {
+    .tarif {
+        width: 335px;
+        
+    }
+    .descriptionTextTarif {
+        padding: 20px 24px;
+    }
+    .price {
+        margin-top: 0;
+    }
+    .descriptionPrice {
+        position: relative;
+        margin-top: 10px;
+    }
+    .descriptionTextTarif h3 {
+        margin-top: 37px;
+    }
+    .buttonTarif {
+        margin-top: 37px;
+    }
+    .currentTarif {
+        display: none;
+    }
+}

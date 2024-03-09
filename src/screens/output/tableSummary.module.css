@@ -1,0 +1,74 @@
+.tableSummary {
+    width: 1260px;
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid #029491
+}
+
+.headerSummary {
+    width: 133px;
+    height: 158px;
+    background-color: #029491;
+}
+
+.scrollTable {
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;
+    width: 1127px;
+    display: flex;
+    list-style: none;
+}
+
+.scrollTable::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.table {
+    width: 133px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pharagraphTableHeader {
+    color: white;
+    margin-left: 28px;
+}
+
+.tableHeader {
+    align-items: start;
+}
+
+.tableContent {
+    padding: 18px 0;
+    margin: 0;
+    width: 131px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.tableContent:not(:last-child) {
+    margin-right: 1em;
+  }
+
+.tableDiv {
+    border-right: 2px solid rgba(148, 148, 148, 0.4);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 131px;
+}
+
+
+.containerTable {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

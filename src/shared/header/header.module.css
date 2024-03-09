@@ -1,0 +1,21 @@
+.header {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 93px;
+}
+
+.limite {
+	position: absolute;
+	top: 15px;
+	left: 915px;
+}
+
+
+@media screen and (max-width: 1320px) {
+	.limite {
+		top: 15px;
+		left: 150px;
+	}
+}

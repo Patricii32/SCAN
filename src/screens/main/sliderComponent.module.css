@@ -1,0 +1,33 @@
+.sliderComponent {
+    box-sizing: border-box;
+    padding: 30px 20px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    width: 400px;
+    height: 225px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.images {
+    margin-bottom: 20px;
+}
+
+.paragraph {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+
+@media screen and (max-width: 1320px) {
+    .sliderComponent {
+        box-sizing: border-box;
+        width: 270px;
+        height: 188px;
+    }
+
+}

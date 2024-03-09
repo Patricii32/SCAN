@@ -1,0 +1,219 @@
+.formSearch {
+    width: 872px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 25px;
+    padding-bottom: 39px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 20px 0px #00000026;
+}
+
+.input {
+    box-sizing: border-box;
+    width: 242px;
+    padding: 0 19px;
+    margin-bottom: 30px;
+    height: 43px;
+
+    border-radius: 5px;
+    border: 1px solid #C7C7C7;
+    box-shadow: 0px 0px 20px 0px #0000000D;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+}
+
+.containerInput {
+    width: 372px;
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerCheckbox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    width: 406px;
+}
+
+.labelCheckbox {
+    margin-left: 17px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+}
+
+.inputDate {
+    width: 176px;
+}
+
+.input::placeholder {
+    opacity: 40%;
+    color: #949494;
+    text-align: center;
+  }
+
+.labelDate {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="date"]::before { 
+    content: attr(data-placeholder);
+    width: 100%;
+    opacity: 40%;
+    color: #949494;
+    text-align: center;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+
+
+}
+
+input[type="date"]:focus::before,
+input[type="date"]:valid::before { display: none }
+
+.inputOpen {
+    appearance: none;
+    -webkit-appearance: none; /* Safari и Chrome */
+    -moz-appearance: none; /* Mozilla */
+    -ms-appearance: none; /* IE */
+    background-image: url("../../images/open.svg");
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-position: calc(100% - 15px) center;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0%;
+}
+
+.checkbox {
+    margin-bottom: 15px;
+}
+
+.buttonSearch {
+    align-self: flex-end;
+    padding: 0;
+
+    width: 305px;
+    height: 59px;
+    border-radius: 5px;
+    border: none;
+    background-color: #5970FF;
+    margin-top: 130px;
+
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0.03em;
+
+}
+
+.buttonSearch:disabled {
+    opacity: 50%;
+}
+
+.hint {
+    margin-top: 10px;
+    margin-right: 46px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    text-align: end;
+
+    color: #949494;
+
+}
+
+.customCheckbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.customCheckbox+label {
+    opacity: 40%;
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.customCheckbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid black;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 80% 80%;
+}
+
+.customCheckbox:checked+label::before {
+    border-color: black;
+    background-image: url("../../images/check2.svg");
+  }
+
+.customCheckbox:checked+label {
+    opacity: 100%;
+}
+
+.spanEror {
+    color: #FF5959;
+}
+
+.erorMassege {
+    margin-left: 19px;
+    margin-top: -25px;
+    position: absolute;
+    color: #FF5959;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0.01em;
+
+}
+
+.erorMassegeDate {
+    width: 372px;
+    text-align: center;
+    margin-top: 48px;
+}
+
+.error {
+    border: 1px solid rgba(255, 89, 89, 1);
+    color: rgba(255, 89, 89, 1);
+    box-shadow: 0px 0px 20px 0px rgba(255, 89, 89, 0.2);
+}
